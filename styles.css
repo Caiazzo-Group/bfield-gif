@@ -175,6 +175,7 @@ h1 {
 }
 
 .viewer {
+  scroll-margin-top: clamp(14px, 3vw, 32px);
   padding: clamp(20px, 4vw, 38px);
   border: 1px solid var(--line);
   border-radius: var(--radius-large);
@@ -324,7 +325,7 @@ footer a {
   }
 
   .intro {
-    display: none;
+    margin-bottom: 38px;
   }
 
   .viewer-heading {
