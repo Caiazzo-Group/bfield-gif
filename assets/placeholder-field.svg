@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="core" cx="42%" cy="36%" r="68%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.18" stop-color="#ffd5b9"/>
+      <stop offset="0.55" stop-color="#ff8c68"/>
+      <stop offset="1" stop-color="#8e2548"/>
+    </radialGradient>
+    <linearGradient id="axis" x1="0" x2="1">
+      <stop offset="0" stop-color="#63dff0" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#63dff0" stop-opacity="0.8"/>
+      <stop offset="0.7" stop-color="#63dff0" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#63dff0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke="#69dfed" stroke-linecap="round" filter="url(#glow)">
+    <path d="M300 400 C296 146 504 146 500 400" stroke-width="2.3" opacity="0.92"/>
+    <path d="M300 400 C224 178 576 178 500 400" stroke-width="2" opacity="0.8"/>
+    <path d="M300 400 C144 210 656 210 500 400" stroke-width="1.8" opacity="0.66"/>
+    <path d="M300 400 C62 254 738 254 500 400" stroke-width="1.5" opacity="0.48"/>
+    <path d="M300 400 C296 654 504 654 500 400" stroke-width="2.3" opacity="0.92"/>
+    <path d="M300 400 C224 622 576 622 500 400" stroke-width="2" opacity="0.8"/>
+    <path d="M300 400 C144 590 656 590 500 400" stroke-width="1.8" opacity="0.66"/>
+    <path d="M300 400 C62 546 738 546 500 400" stroke-width="1.5" opacity="0.48"/>
+  </g>
+
+  <g fill="#8eecf5" opacity="0.8">
+    <path d="M394 189 l10 1 -7 8z"/>
+    <path d="M526 237 l10 3 -8 7z"/>
+    <path d="M634 313 l9 5 -10 4z"/>
+    <path d="M406 611 l-10 -1 7 -8z"/>
+    <path d="M274 563 l-10 -3 8 -7z"/>
+    <path d="M166 487 l-9 -5 10 -4z"/>
+  </g>
+
+  <line x1="190" y1="400" x2="610" y2="400" stroke="url(#axis)" stroke-width="2"/>
+  <circle cx="400" cy="400" r="76" fill="#ff8c68" opacity="0.16" filter="url(#glow)"/>
+  <circle cx="400" cy="400" r="52" fill="url(#core)"/>
+  <path d="M348 400 A52 52 0 0 1 452 400" fill="#5bcfe2" opacity="0.52"/>
+  <circle cx="400" cy="400" r="52" fill="none" stroke="#fff" stroke-opacity="0.52"/>
+  <circle cx="348" cy="400" r="5" fill="#6de4f2"/>
+  <circle cx="452" cy="400" r="5" fill="#ffb38f"/>
+</svg>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A prototype home for magnetic-field animations from the Caiazzo Group."
+    />
+    <meta name="theme-color" content="#06101d" />
+    <meta property="og:title" content="B-field animation · Caiazzo Group" />
+    <meta
+      property="og:description"
+      content="A live prototype for sharing magnetic-field animations."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/placeholder-bfield.gif" />
+    <title>B-field animation · Caiazzo Group</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a
+          class="brand"
+          href="https://github.com/Caiazzo-Group"
+          aria-label="Caiazzo Group on GitHub"
+        >
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Caiazzo Group</span>
+        </a>
+        <span class="prototype-badge">
+          <span class="status-dot" aria-hidden="true"></span>
+          Prototype
+        </span>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <p class="eyebrow">Magnetic-field animation</p>
+          <h1 id="page-title">A live window into the field.</h1>
+          <p class="lede">
+            This is the deployment test for a future science animation. The
+            looping dipole below is a lightweight placeholder and can be
+            replaced without changing the page.
+          </p>
+        </section>
+
+        <section class="viewer" aria-labelledby="viewer-title">
+          <div class="viewer-heading">
+            <div>
+              <p class="section-label">Now showing</p>
+              <h2 id="viewer-title">Rotating dipole placeholder</h2>
+            </div>
+            <span class="loop-indicator">
+              <span aria-hidden="true">↻</span>
+              Continuous loop
+            </span>
+          </div>
+
+          <figure class="animation-frame">
+            <img
+              id="field-animation"
+              src="assets/placeholder-bfield.gif"
+              alt="Animated placeholder showing luminous magnetic field lines rotating around a central dipole."
+              width="800"
+              height="800"
+            />
+            <figcaption>
+              <span>Prototype asset</span>
+              <span>800 × 800 px · GIF</span>
+            </figcaption>
+          </figure>
+
+          <div class="viewer-actions" aria-label="Animation controls">
+            <button id="replay-button" class="button button-primary" type="button">
+              Replay animation
+            </button>
+            <a
+              class="button button-secondary"
+              href="assets/placeholder-bfield.gif"
+              target="_blank"
+              rel="noopener"
+            >
+              Open GIF
+            </a>
+          </div>
+        </section>
+
+        <section class="handoff" aria-labelledby="handoff-title">
+          <p class="section-label">Ready for the real render</p>
+          <h2 id="handoff-title">One file is all that needs to change.</h2>
+          <p>
+            Replace <code>assets/placeholder-bfield.gif</code> with the final
+            animation using the same filename, commit, and push. GitHub Pages
+            will publish the update automatically.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <span>Caiazzo Group · Research visualization prototype</span>
+        <a href="https://github.com/Caiazzo-Group/bfield-gif">View source</a>
+      </footer>
+    </div>
+  </body>
+</html>
