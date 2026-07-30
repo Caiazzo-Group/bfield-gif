@@ -16,10 +16,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/placeholder-bfield.gif" />
     <title>B-field animation · Caiazzo Group</title>
+
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css?v=3" />
     <script src="script.js?v=4" defer></script>
   </head>
+
   <body>
     <div class="page-shell">
       <header class="site-header">
@@ -31,6 +33,7 @@
           <span class="brand-mark" aria-hidden="true"></span>
           <span>Caiazzo Group</span>
         </a>
+
         <span class="prototype-badge">
           <span class="status-dot" aria-hidden="true"></span>
           Prototype
@@ -40,19 +43,26 @@
       <main>
         <section class="intro" aria-labelledby="page-title">
           <p class="eyebrow">Magnetic-field animation</p>
+
           <h1 id="page-title">A live window into the field.</h1>
+
           <p class="lede">
             This animation tracks how the visible surface magnetic field of
-            white dwarf ZTFJ0118+4016 changes with rotation. 
+            white dwarf ZTFJ0118+4016 changes with rotation.
           </p>
         </section>
 
-        <section id="animation" class="viewer" aria-labelledby="viewer-title">
+        <!-- ================= FIRST GIF ================= -->
+
+        <section class="viewer" aria-labelledby="viewer-title-1">
           <div class="viewer-heading">
             <div>
               <p class="section-label">Now showing</p>
-              <h2 id="viewer-title">Surface Magnetic Field of ZTFJ0118+4016 </h2>
+              <h2 id="viewer-title-1">
+                Surface Magnetic Field of ZTFJ0118+4016
+              </h2>
             </div>
+
             <span class="loop-indicator">
               <span aria-hidden="true">↻</span>
               Continuous loop
@@ -61,22 +71,19 @@
 
           <figure class="animation-frame">
             <img
-              id="field-animation"
               src="assets/placeholder-bfield.gif"
-              alt="Animated placeholder showing luminous magnetic field lines rotating around a central dipole."
+              alt="Surface magnetic field animation."
               width="800"
               height="800"
             />
+
             <figcaption>
               <span>Prototype asset</span>
               <span>800 × 800 px · GIF</span>
             </figcaption>
           </figure>
 
-          <div class="viewer-actions" aria-label="Animation controls">
-            <button id="replay-button" class="button button-primary" type="button">
-              Replay animation
-            </button>
+          <div class="viewer-actions">
             <a
               class="button button-secondary"
               href="assets/placeholder-bfield.gif"
@@ -88,11 +95,56 @@
           </div>
         </section>
 
+        <!-- ================= SECOND GIF ================= -->
+
+        <section class="viewer" aria-labelledby="viewer-title-2">
+          <div class="viewer-heading">
+            <div>
+              <p class="section-label">Now showing</p>
+              <h2 id="viewer-title-2">
+                Surface Magnetic Field of ZTFJ0118+4016 (Model 2)
+              </h2>
+            </div>
+
+            <span class="loop-indicator">
+              <span aria-hidden="true">↻</span>
+              Continuous loop
+            </span>
+          </div>
+
+          <figure class="animation-frame">
+            <img
+              src="assets/placeholder-bfield.gif"
+              alt="Second surface magnetic field animation."
+              width="800"
+              height="800"
+            />
+
+            <figcaption>
+              <span>Prototype asset</span>
+              <span>800 × 800 px · GIF</span>
+            </figcaption>
+          </figure>
+
+          <div class="viewer-actions">
+            <a
+              class="button button-secondary"
+              href="assets/second-bfield.gif"
+              target="_blank"
+              rel="noopener"
+            >
+              Open GIF
+            </a>
+          </div>
+        </section>
       </main>
 
       <footer>
         <span>Caiazzo Group · Research visualization prototype</span>
-        <a href="https://github.com/Caiazzo-Group/bfield-gif">View source</a>
+
+        <a href="https://github.com/Caiazzo-Group/bfield-gif">
+          View source
+        </a>
       </footer>
     </div>
   </body>
